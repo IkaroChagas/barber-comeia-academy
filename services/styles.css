@@ -7,7 +7,7 @@
 body {
     max-width: 1200px;
     margin: 0 auto;
-    background-image: url(/images/landing\ page.png);
+    background-image: url(./images/landing\ page.png);
     background-size: cover;
     font-family: 'Poppins', sans-serif;
     color: #FBB034;

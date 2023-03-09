@@ -110,6 +110,7 @@ footer {
 .social-media {
     display: flex;
     flex-direction: column;
+    cursor: pointer;
 }
 
 .social-media h3 {
@@ -118,6 +119,7 @@ footer {
 
 .social-media-img {
     display: flex;
+    justify-content: space-around;
 }
 
 
@@ -143,7 +145,6 @@ footer {
 
     nav li a {
         padding: 45px;
-
     }
 
     main {

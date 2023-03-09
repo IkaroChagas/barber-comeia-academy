@@ -52,26 +52,68 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-around;
 }
 
 .frame {
     display: flex;
+    flex-direction: column;
     border: 2px solid #FBB034;
     padding: 20px;
     width: 700px;
     border-radius: 10px;
-    margin: 0 auto;
+    margin-top: 70px;
 }
 
-.frame ul li {
+.frame li {
     list-style-type: none;
-    padding-top: 50px;
+    padding: 20px;
     align-items: center;
 }
 
 
-
 .frame h2 {
     color: #fff;
+    text-align: center;
+}
+
+.service-list {
+    display: flex;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 425px) {
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    body {
+        max-width: 100vw;
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+    }
+
+    nav li a {
+        padding: 25px;
+    }
+
+    .frame {
+        display: flex;
+        flex-direction: column;
+        border: 2px solid #FBB034;
+        font-size: 16px;
+        width: 100vw;
+        border-radius: 10px;
+        margin-top: 40px;
+    }
+
 }

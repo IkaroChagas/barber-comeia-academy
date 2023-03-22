@@ -271,21 +271,27 @@ footer {
     }
 
     .map-image {
-        padding-left: 15px;
+        display: flex;
+        align-items: center;
+        margin: 0 auto;
+        padding-left: 25px;
     }
 
     .map-image img {
-        width: 350px;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        width: 330px;
         height: 170px;
     }
 
     .address {
-        display: block;
+        display: flex;
         padding-bottom: 70px;
     }
 
     .address h2 {
-        display: block;
+        display: flex;
         font-size: 20px;
         color: #FBB034;
         align-items: center;

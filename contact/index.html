@@ -23,13 +23,29 @@
         </nav>
     </header>
 
-    <main>
+    <section>
         <div class="contact-text">
             <h2>Fale conosco no Whatsapp</h2>
-            <div class="image-button">
-                <img src="../images/wpp.png" alt="">
-            </div>
         </div>
+    </section>
+
+    <main>
+        <form action="" method="POST">
+            <div class="form1">
+                <label for="nome"></label>
+                <input type="text" placeholder="Seu nome" id="nome" name="nome" required><br>
+
+                <label for="email"></label>
+                <input type="email" placeholder="Seu email" id="email" name="email" required><br>
+
+                <label for="mensagem"></label>
+                <textarea id="mensagem" placeholder="Digite sua mensagem" name="mensagem" required></textarea><br>
+
+                <div class="botao-enviar">
+                    <button type="submit" id="meuBotao" class="botao">Enviar</button>
+                </div>
+            </div>
+        </form>
 
         <div class="map-image">
             <img src="../images/avenida.png" alt="">
@@ -42,7 +58,7 @@
         </div>
     </footer>
 
-
+    <script src="script.js"></script>
 
 </body>
 

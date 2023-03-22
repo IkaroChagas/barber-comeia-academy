@@ -55,20 +55,76 @@ main {
 
 .contact-text {
     display: flex;
-    flex-direction: column;
-    font-size: 20px;
-    padding: 70px;
+    font-size: 18px;
 }
 
 .contact-text h2 {
     text-align: center;
-    padding: 10px;
+    margin-left: 15px;
+    padding-top: 80px;
 }
 
-.image-button {
+.form1 {
     display: flex;
+    padding-top: 50px;
+    flex-direction: column;
+}
+
+#nome,
+#email {
+    display: flex;
+    width: 400px;
+    height: 25px;
+    background-color: #c9b18b;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+#nome,
+#email::placeholder {
+    text-align: center;
+    font-weight: 400;
+}
+
+#mensagem {
+    display: flex;
+    width: 400px;
+    height: 100px;
+    background-color: #c9b18b;
+    border-radius: 5px;
+    border: 0;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.botao-enviar {
+    display: flex;
+    flex-direction: row;
+}
+
+
+.botao {
     align-items: center;
-    padding: 40px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: #FBB034;
+    color: #000;
+    padding: 10px 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.botao:hover {
+    background-color: #c9b18b;
 }
 
 .image-button img {
@@ -77,9 +133,11 @@ main {
     cursor: pointer;
 }
 
+
 .map-image {
     display: flex;
-    padding: 70px;
+    padding: 90px;
+    padding-top: 5px;
 }
 
 .map-image img {
@@ -94,7 +152,7 @@ footer {
 }
 
 .address {
-    display: flex;
+    display: block;
     flex-direction: row;
 }
 
@@ -102,7 +160,8 @@ footer {
     text-align: center;
     color: #FBB034;
     align-items: center;
-    padding-left: 780px;
+    margin-top: -45px;
+    padding-left: 720px;
 }
 
 @media (max-width: 425px) {
@@ -131,48 +190,106 @@ footer {
         flex-direction: column;
     }
 
+
     .contact-text {
-        font-size: 20px;
-        padding: 70px;
+        display: flex;
+        font-size: 18px;
     }
 
-    .image-button {
+    .contact-text h2 {
+        text-align: center;
+        margin-left: 15px;
+        padding-top: 20px;
+    }
+
+    .form1 {
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+
+    #nome,
+    #email {
         display: flex;
-        justify-content: center;
+        width: 350px;
+        height: 25px;
+        background-color: #c9b18b;
+        border-radius: 5px;
+        border: 0;
+        margin: 0 auto;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    #nome,
+    #email::placeholder {
+        text-align: center;
+        font-weight: 400;
+    }
+
+    #mensagem {
+        display: flex;
+        width: 350px;
+        height: 100px;
+        background-color: #c9b18b;
+        border-radius: 5px;
+        border: 0;
+        margin: 0 auto;
+        font-family: 'Roboto', sans-serif;
+    }
+
+
+    .botao-enviar {
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    .botao {
+        align-items: center;
+        width: 250px;
+        margin: 0 auto;
+        background-color: #FBB034;
+        color: #000;
+        padding: 10px 30px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 13px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: 700;
+        transition: background-color 0.3s ease;
+    }
+
+    .botao:hover {
+        background-color: #c9b18b;
     }
 
     .image-button img {
-        width: 300px;
+        width: 350px;
         height: 120px;
         cursor: pointer;
     }
 
     .map-image {
-        display: flex;
-        justify-content: center;
+        padding-left: 15px;
     }
 
     .map-image img {
-        width: 450px;
-        height: 210px;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        width: 350px;
+        height: 170px;
     }
 
     .address {
-        display: flex;
+        display: block;
         padding-bottom: 70px;
     }
 
     .address h2 {
+        display: block;
         font-size: 20px;
         color: #FBB034;
         align-items: center;
-        padding-left: 65px;
+        padding-left: 75px;
     }
 
 }
